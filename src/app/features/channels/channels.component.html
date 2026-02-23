@@ -1,0 +1,15 @@
+<h2>Channels</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Daily Limit</th>
+    <th>Hourly Limit</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let ch of channels">
+    <td>{{ ch.name }}</td>
+    <td>{{ ch.daily_limit }}</td>
+    <td>{{ ch.hourly_limit }}</td>
+    <td>{{ ch.status }}</td>
+  </tr>
+</table>

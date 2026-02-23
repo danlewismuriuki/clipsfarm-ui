@@ -1,0 +1,15 @@
+<h2>Jobs</h2>
+<table>
+  <tr>
+    <th>Job ID</th>
+    <th>Status</th>
+    <th>Type</th>
+    <th>Created At</th>
+  </tr>
+  <tr *ngFor="let job of jobs">
+    <td>{{ job._id }}</td>
+    <td>{{ job.status }}</td>
+    <td>{{ job.job_type }}</td>
+    <td>{{ job.created_at }}</td>
+  </tr>
+</table>

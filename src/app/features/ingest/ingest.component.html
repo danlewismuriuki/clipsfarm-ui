@@ -1,0 +1,11 @@
+<h2>Submit TikTok URLs</h2>
+<textarea [(ngModel)]="urls" placeholder="Enter one URL per line"></textarea>
+<button (click)="submitUrls()">Submit</button>
+
+<div *ngIf="response">
+  <p>Accepted: {{ response.accepted }}</p>
+  <p>Duplicates: {{ response.duplicates }}</p>
+  <p>Invalid: {{ response.invalid }}</p>
+  <p>Batch ID: {{ response.batch_id }}</p>
+  <p>Queue Position: {{ response.queue_position }}</p>
+</div>
